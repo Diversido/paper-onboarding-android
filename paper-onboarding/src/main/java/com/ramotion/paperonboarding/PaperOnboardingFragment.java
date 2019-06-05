@@ -11,8 +11,9 @@ import com.ramotion.paperonboarding.listeners.PaperOnboardingOnRightOutListener;
 
 import java.util.ArrayList;
 
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+//import androidx.annotation.Nullable;
+import android.support.v4.app.Fragment;
+//import androidx.fragment.app.Fragment;
 
 /**
  * Ready to use PaperOnboarding fragment
@@ -43,7 +44,7 @@ public class PaperOnboardingFragment extends Fragment {
         }
     }
 
-    @Nullable
+    //@Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.onboarding_main_layout, container, false);

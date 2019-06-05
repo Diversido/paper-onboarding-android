@@ -2,6 +2,7 @@ package com.ramotion.paperonboarding.examples.simple;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.ramotion.paperonboarding.PaperOnboardingEngine;
@@ -11,7 +12,6 @@ import com.ramotion.paperonboarding.listeners.PaperOnboardingOnRightOutListener;
 
 import java.util.ArrayList;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 public class PaperOnboardingActivity extends AppCompatActivity {
 
