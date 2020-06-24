@@ -108,16 +108,18 @@ task jacocoReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
         html.enabled = true
     }
 
-    classDirectories = fileTree(
+    classDirectories.setFrom(
+        fileTree(
             dir: 'build/intermediates/classes/debug',
             excludes: [
                     '**/R*.class',
                     '**/BuildConfig*'
             ]
+        )
     )
 
-    sourceDirectories = files('src/main/java')
-    executionData = files('build/jacoco/testDebugUnitTest.exec')
+    sourceDirectories.setFrom(files('src/main/java'))
+    executionData.setFrom(files('build/jacoco/testDebugUnitTest.exec'))
 
     doFirst {
         files('build/intermediates/classes/debug').getFiles().each { file ->
